@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Patrick Babb
+# DATE: 3/1/2026
+# BRIEF DESCRIPTION: a more complex conversion program for F-C/C-F temp conversions
 
 
 
@@ -14,7 +14,26 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+def main():
+    temp_conversion()
 
+def temp_conversion():
+    print('===== Temperature Converter =====')
+    print('1. Convert from Celsius to Fahrenheit')
+    print('2. Convert from Fahrenheit to Celsius')
+    choice = int(input('Please choose from the above menu: '))
+    if (choice == 1):
+        c = int(input('Enter a temperature to convert: '))
+        converted = c * 9/5 + 32
+        print(f'{c} degrees Celsius is {converted} degrees Fahrenheit.')
+    else:
+        f = int(input('Enter a temperature to convert: '))
+        converted = (f - 32 ) * 5/9
+        print(f'{f} degrees Fahrenheit is {converted} degrees Celsius.')
+main()
+        
+    
+    
 
 
 
@@ -92,7 +111,8 @@ Enter a temperature to convert: -40
 '''
 
 1. What is one lesson you learned in this lab?
-
+that generally speaking if elif else is more tidy for coding as the user can't just type whatever in and get a result tied
+to the else code
 
 
 
