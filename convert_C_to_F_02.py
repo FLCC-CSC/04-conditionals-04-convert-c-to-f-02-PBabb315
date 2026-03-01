@@ -25,11 +25,11 @@ def temp_conversion():
     print('2. Convert from Fahrenheit to Celsius')
     choice = int(input('Please choose from the above menu: '))
     if (choice == 1):
-        c = int(input('Enter a temperature to convert: '))
+        c = float(input('Enter a temperature to convert: '))
         converted = c * 9/5 + 32
         print(f'{c} degrees Celsius is {converted} degrees Fahrenheit.')
     else:
-        f = int(input('Enter a temperature to convert: '))
+        f = float(input('Enter a temperature to convert: '))
         converted = (f - 32 ) * 5/9
         print(f'{f} degrees Fahrenheit is {converted} degrees Celsius.')
 main()
